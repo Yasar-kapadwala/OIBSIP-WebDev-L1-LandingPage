@@ -6,3 +6,5 @@
 [✅] Responsive layout — page must not break at mobile screen widths (use CSS Flexbox or Grid)
 [✅] No element overlap — all padding, margin, and box-sizing must be intentionally set
 [✅] Clean, readable typography with at least 2 font sizes used (heading vs. body)
+
+This landing page is about we are providing healthy food ad door step. at affordable prices.
