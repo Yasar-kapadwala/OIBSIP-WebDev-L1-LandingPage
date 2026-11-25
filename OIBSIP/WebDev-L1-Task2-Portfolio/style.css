@@ -1,0 +1,185 @@
+/* Smooth scrolling for single-page links */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Basic Reset & Custom Font */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f8fafc;
+    color: #1e293b;
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #0f292a;
+    color: #ffffff;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #38bdf8;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: #e2e8f0;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #38bdf8;
+}
+
+/* Introduction / Hero Section */
+.hero {
+    background: linear-gradient(135deg, #0f172a, #1e788a);
+    color: #ffffff;
+    text-align: center;
+    padding: 90px 20px;
+}
+
+.hero h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.highlight {
+    color: #38bdf8;
+}
+
+.subtitle {
+    font-size: 20px;
+    color: #cbd5e1;
+    margin-bottom: 15px;
+}
+
+.bio {
+    max-width: 600px;
+    margin: 0 auto 25px auto;
+    color: #e2e8f0;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #38bdf8;
+    color: #0f172a;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #7dd3fc;
+    transform: translateY(-3px);
+}
+
+/* Containers */
+.container {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.container h2 {
+    font-size: 28px;
+    color: #0f172a;
+    margin-bottom: 20px;
+    border-left: 4px solid #3882f8;
+    padding-left: 12px;
+}
+
+
+
+/* Projects Grid & Hover Animation */
+.project-grid {
+    display: flex;
+    gap: 20px;
+}
+
+.project-card {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+    flex: 1;
+    border-top: 4px solid #385ef8;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+}
+
+
+.project-card p {
+    color: #475569;
+    margin-bottom: 15px;
+}
+
+
+
+/* Contact Section */
+.contact-box {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+}
+
+.contact-details {
+    margin-top: 15px;
+    line-height: 2;
+}
+
+/* Footer */
+footer {
+    background-color: #0f172a;
+    color: #94a3b8;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .project-grid {
+        flex-direction: column;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+}
